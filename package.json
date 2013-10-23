@@ -20,7 +20,7 @@
     "tap": "~0.4.3",
     "bunyan": "~0.22.0"
   },
-  "keywords": [],
+  "keywords": [ "bunyan", "stream", "log", "logger", "format", "pretty", "color", "style" ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
