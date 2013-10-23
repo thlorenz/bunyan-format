@@ -1,7 +1,7 @@
 # bunyan-format
 [![build status](https://secure.travis-ci.org/thlorenz/bunyan-format.png)](http://travis-ci.org/thlorenz/bunyan-format)
 
-Transform stream that formats bunyan records that are piped through it.
+Writable stream that formats bunyan records that are piped into it
 
 ```js
 // TODO
