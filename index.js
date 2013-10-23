@@ -12,6 +12,18 @@ module.exports = BunyanFormatWritable;
 
 util.inherits(BunyanFormatWritable, Writable);
 
+/**
+ * Creates a writable stream that formats bunyan records written to it.
+ * 
+ * @name BunyanFormatWritable
+ * @function
+ * @param opts {Options} passed to bunyan format function
+ *  - outputMode: short|long|simple|json|bunyan
+ *  - color (true): toggles colors in output
+ *  - colorFromLevel: allows overriding log level colors
+ * @param out {Stream} (process.stdout) writable stream to write 
+ * @return {WritableStream} that you can pipe bunyan output into
+ */
 function BunyanFormatWritable (opts, out) {
   if (!(this instanceof BunyanFormatWritable)) return new BunyanFormatWritable(opts, out);
 
