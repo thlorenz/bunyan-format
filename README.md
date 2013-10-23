@@ -17,6 +17,8 @@ log.error('OOOOHHH it burns!', new Error('temperature: 200'));
 log.fatal('I died! Do you know what that means???');
 ```
 
+![demo](https://github.com/thlorenz/bunyan-format/raw/master/assets/bunyan-format-demo.gif)
+
 ## Installation
 
     npm install bunyan-format
