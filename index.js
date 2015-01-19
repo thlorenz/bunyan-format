@@ -35,7 +35,7 @@ function BunyanFormatWritable (opts, out) {
     outputMode: 'short', 
     color: true,
     colorFromLevel: {
-      10: 'brighBlack',     // TRACE
+      10: 'brightBlack',    // TRACE
       20: 'brightBlack',    // DEBUG
       30: 'green',          // INFO
       40: 'magenta',        // WARN
