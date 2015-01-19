@@ -1,6 +1,6 @@
 {
   "name": "bunyan-format",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Writable stream that formats bunyan records that are piped into it.",
   "main": "index.js",
   "scripts": {
