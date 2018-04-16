@@ -13,8 +13,7 @@
   "homepage": "https://github.com/thlorenz/bunyan-format",
   "dependencies": {
     "ansistyles": "~0.1.1",
-    "ansicolors": "~0.2.1",
-    "xtend": "~2.1.1"
+    "ansicolors": "~0.2.1"
   },
   "devDependencies": {
     "tap": "~0.4.3",
