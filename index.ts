@@ -1,5 +1,3 @@
-'use strict';
-
 import { Writable, WritableOptions } from 'stream';
 import formatRecord, { FormatRecordOptions } from './lib/format-record';
 
@@ -19,17 +17,17 @@ class BunyanFormatWritable extends Writable {
   public static readonly default = BunyanFormatWritable;
 
   private readonly opts: Options;
-  private out: Writable;
+  private out: NodeJS.WritableStream;
 
-  constructor(opts: Options, out: Writable) {
+  constructor(opts?: Options, out?: NodeJS.WritableStream) {
     // @ts-ignore
     if (!(this instanceof BunyanFormatWritable)) {
       return new BunyanFormatWritable(opts, out);
     }
 
-    opts = opts || {};
-    opts.objectMode = true;
-    super(opts);
+    const innerOptions: Partial<Options> = opts || {};
+    innerOptions.objectMode = true;
+    super(innerOptions);
 
     this.opts = {
       outputMode: 'short',
@@ -42,7 +40,7 @@ class BunyanFormatWritable extends Writable {
         50: 'red',            // ERROR
         60: 'brightRed',      // FATAL
       },
-      ...opts
+      ...innerOptions
     };
     this.out = out || process.stdout;
   }
