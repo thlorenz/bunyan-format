@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "description": "Writable stream that formats bunyan records that are piped into it.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "tap test/*.js"
   },
@@ -13,12 +14,13 @@
   "homepage": "https://github.com/thlorenz/bunyan-format",
   "dependencies": {
     "ansistyles": "~0.1.1",
-    "ansicolors": "~0.2.1",
-    "xtend": "~2.1.1"
+    "ansicolors": "~0.2.1"
   },
   "devDependencies": {
+    "@types/node": "^8.10.59",
     "tap": "~0.4.3",
-    "bunyan": "~0.22.0"
+    "bunyan": "~0.22.0",
+    "typescript": "~3.7.4"
   },
   "keywords": [
     "bunyan",
@@ -40,6 +42,6 @@
     "url": "https://github.com/thlorenz/bunyan-format/blob/master/LICENSE"
   },
   "engine": {
-    "node": ">=0.10"
+    "node": ">=8"
   }
 }

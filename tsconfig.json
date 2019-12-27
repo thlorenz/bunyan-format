@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"outDir": ".",
+		"declaration": true,
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"module": "commonjs",
+		"target": "es5",
+		"sourceMap": false,
+		"pretty": true,
+		"typeRoots": [
+			"./node_modules/@types/",
+			"modules.d.ts"
+		],
+		"moduleResolution": "node",
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"strictBindCallApply": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true
+	},
+	"filesGlob": [
+		"./**/*.ts",
+		"!./node_modules/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
